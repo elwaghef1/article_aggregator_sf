@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="my-4">Articles from RSS Feeds</h1>
+        <div class="row">
+            {% for article in articles %}
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">{{ article.name }}</h2>
+                            <h6 class="text-muted">{{ article.sourceName }}</h6>
+                            <p class="card-text">{{ article.content }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <p>
+            <a href="{{ path('homepage') }}" class="btn btn-secondary">Back to Home</a>
+        </p>
+    </div>
+
+    <div class="navigation">
+        {{ knp_pagination_render(articles) }}
+    </div>
+
+{% endblock %}
