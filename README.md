@@ -60,7 +60,7 @@ Body:
 json
 Copier le code
 {
-    "email": "elwaghef@gmail.com",
+    "email": "test@test.com",
     "password": "password"
 }
 Access Protected Endpoint
