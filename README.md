@@ -33,7 +33,7 @@ Go to the /api/login_check endpoint with the following payload to generate a JWT
 json
 Copier le code
 {
-    "email": "elwaghef@gmail.com",
+    "email": "test@test.com",
     "password": "password"
 }
 You will receive a JWT token in the response. Use this token to access protected API URLs.
