@@ -20,7 +20,7 @@ class UserFixures extends Fixture
         $user = new User();
 
         $hashedPassword = $this->passwordHasher->hashPassword($user, 'password');
-        $user->setEmail('elwaghef@gmail.com')
+        $user->setEmail('test@test.com')
             ->setPassword($hashedPassword)
             ->setRoles(['ROLE_USER']);
 
